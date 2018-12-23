@@ -4,10 +4,11 @@ import java.util.Scanner;
 
 public class Main {
 
+    /*
     public static void main(String[] args) {
 
 
-        // 31, 45, 22, 98, 10
+         31, 45, 22, 98, 10
         int[] numbers = new int[5];
 
         numbers[0] = 31;
@@ -18,61 +19,83 @@ public class Main {
 
         int[] numbers2 = {31, 45, 22, 98, 10};
 
-//        String[] myFavoriteCandyBars = {"Twix", "Hershey's", "Crunch"};
-//
-//        System.out.println("Index 1: " + myFavoriteCandyBars[1]);
-//
-//        myFavoriteCandyBars[2] = "Vegan bar";
-//        System.out.println("Index 2: " + myFavoriteCandyBars[2]);
-//
-//        System.out.println("Length of myFavoriteCandyBars[]: " + myFavoriteCandyBars.length);
+        String[] myFavoriteCandyBars = {"Twix", "Hershey's", "Crunch"};
+
+        System.out.println("Index 1: " + myFavoriteCandyBars[1]);
+
+        myFavoriteCandyBars[2] = "Vegan bar";
+        System.out.println("Index 2: " + myFavoriteCandyBars[2]);
+
+        System.out.println("Length of myFavoriteCandyBars[]: " + myFavoriteCandyBars.length);
 
         System.out.println(0 < 'a');
 
 
+        System.out.println("Enter a word: ");
 
+        Scanner sc = new Scanner(System.in);
+        int userNumber = sc.nextInt();
+        System.out.println(userNumber);
+        double userNumber2 = sc.nextDouble();
+        System.out.println(userNumber2);
 
+        String userInput = sc.next();
 
+        String uppercased = userInput.toUpperCase();
+        System.out.println(userInput);
+        System.out.println(uppercased);
 
+        char firstCharacter = userInput.charAt(0);
+        System.out.println(firstCharacter);
 
+        System.out.println("Contains: " + userInput.contains(("Enter").toLowerCase()));
 
-        //        System.out.println("Enter a word: ");
+    public static void main(String[] args) {
+        System.out.println("Hello World");
+        System.out.println("Max");
 
-//        Scanner sc = new Scanner(System.in);
-//        int userNumber = sc.nextInt();
-//        System.out.println(userNumber);
-//        double userNumber2 = sc.nextDouble();
-//        System.out.println(userNumber2);
+        Car myCar = new Car(
+                25.5,
+        "1BC32E", java.awt.Color.BLUE, true );
 
-//        String userInput = sc.next();
-//
-//        String uppercased = userInput.toUpperCase();
-//        System.out.println(userInput);
-//        System.out.println(uppercased);
-//
-//        char firstCharacter = userInput.charAt(0);
-//        System.out.println(firstCharacter);
-//
-//        System.out.println("Contains: " + userInput.contains(("Enter").toLowerCase()));
+        Car sallyCar = new Car(31.3,
+        "14DR56", java.awt.Color.BLACK,false);
 
-//    public static void main(String[] args) {
-//        System.out.println("Hello World");
-//        System.out.println("Max");
-//
-//        Car myCar = new Car(
-//                25.5,
-//        "1BC32E", java.awt.Color.BLUE, true );
-//
-//        Car sallyCar = new Car(31.3,
-//        "14DR56", java.awt.Color.BLACK,false);
-//
-//        System.out.println("My car's License Plate: " + myCar.licensePlate);
-//        System.out.println("Sally's License Plate: " + sallyCar.licensePlate);
-//
-//        System.out.println(myCar.paintColor);
-//        myCar.changePaintColor(java.awt.Color.GREEN);
-//        System.out.println(myCar.paintColor);
-//
-//    }
+        System.out.println("My car's License Plate: " + myCar.licensePlate);
+        System.out.println("Sally's License Plate: " + sallyCar.licensePlate);
+
+        System.out.println(myCar.paintColor);
+        myCar.changePaintColor(java.awt.Color.GREEN);
+        System.out.println(myCar.paintColor);
+
+        double myCarSpeed = 50;
+        myCarSpeed = myCar.speedingUp(myCarSpeed);
+        System.out.println(myCarSpeed);
+
     }
+    }
+
+
+    public static void main(String[] args) {
+        String s = "dog";
+        String replacedF = s.replace("d", "f");
+        System.out.println(s);
+        System.out.println(replacedF);
+    }
+    */
+
+    public static void main(String[] args) {
+        // Create instance of dog, Bode
+        Dog bode = new Dog(100.4, "Bode", Color.YELLOW);
+
+        // Simulate Bode eating
+        bode.eat(2.5);
+
+        // Simulate Bode barking
+        bode.bark();
+
+        // Get Bode's weight in kg
+        System.out.println(bode.getWeight());
+    }
+
 }
