@@ -82,7 +82,7 @@ public class Main {
         System.out.println(s);
         System.out.println(replacedF);
     }
-    */
+
 
     public static void main(String[] args) {
         // Create instance of dog, Bode
@@ -96,6 +96,28 @@ public class Main {
 
         // Get Bode's weight in kg
         System.out.println(bode.getWeight());
+    }
+    */
+
+    public static void main(String[] args) {
+        // To calculate chance that two people in room of 30 would have same birthday
+        // o holds number of non-duplicate birthdays left
+        double o = 364.0;
+        // z holds number of total number of possible birthdays
+        double z = 365.0;
+        // p holds probability that two people in room of {i} people have same birthday
+        double p = 1.0;
+        // calculate p for room of 30 people
+        for (double i=0.0; i<30.0; i++) {
+            // print i to keep track of iteration number
+            System.out.print(i + " ");
+            // subtract 1 from o each loop as number of non-duplicate birthdays decreases each iteration
+            o -= i;
+            // calculate p as (last p) * ((number of non-duplicate birthdays left) / (total number of possible birthdays))
+            p = p*(o/z);
+            // print new p
+            System.out.println(p);
+        }
     }
 
 }
