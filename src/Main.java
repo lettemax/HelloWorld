@@ -1,6 +1,11 @@
 import java.awt.*;
 import java.lang.reflect.Array;
+import java.util.concurrent.Future;
 import java.util.Scanner;
+import java.util.Arrays;
+import java.util.Random;
+import java.lang.Math;
+
 
 public class Main {
 
@@ -100,6 +105,7 @@ public class Main {
     */
 
     public static void main(String[] args) {
+        /*
         // To calculate chance that two people in room of 30 would have same birthday
         // o holds number of non-duplicate birthdays left
         double o = 364.0;
@@ -118,6 +124,59 @@ public class Main {
             // print new p
             System.out.println(p);
         }
+        int[] arr = {2, 5, 6, 10, 11, 3, 15};
+        */
+
+        /*
+        double power = Math.pow(5, 3);
+        System.out.println(power);
+
+        double squareRoot = Math.sqrt(64);
+        System.out.println(squareRoot);
+
+        Random rand = new Random();
+        int randomNumber = rand.nextInt();
+        int randomNumberWithBound = rand.nextInt(10);
+        System.out.println(randomNumber);
+        System.out.println(randomNumberWithBound);
+        */
+
+        /*
+        Coin c = new Coin(1);
+        System.out.println("Initial: " + c.getFaceUp());
+        for(int i=0; i<10; i++) {
+            c.flip();
+            System.out.println("After Flip: " + c.getFaceUp());
+        }
+        */
+
+        // Create new Dice object
+        Dice d = new Dice();
+        // Roll six-sided di
+        d.roll();
     }
+
+    /*
+    // function in progress
+    public static int mthSmallest(int[] arr, int m) {
+        int start = 0;
+        int end = arr.length-1;
+        int index = 0;
+        int[] newArray = new int[arr.length];
+        for (int i=0; i<arr.length; i++) {
+            if (arr[i] < arr[index]) {
+                newArray[start] = arr[i];
+                start++;
+            } else if (arr[i] == arr[index]){
+                newArray[start] = arr[i];
+                start++;
+            } else {
+                newArray[end] = arr[i];
+                end--;
+            }
+        }
+        return start;
+    }
+    */
 
 }
