@@ -150,10 +150,30 @@ public class Main {
         }
         */
 
+
+        /*
         // Create new Dice object
         Dice d = new Dice();
         // Roll six-sided di
         d.roll();
+        */
+
+        // Lambda function for Answerable interface
+        // Saving function in variable, phone
+        Answerable phone = () -> {return "Hello";};
+        // Printing out result of function
+        System.out.println(phone.answer());
+
+        // Lambda function for Predicate interface
+        // Saving function in variable, isOdd
+        Predicate isOdd = n -> n % 2 != 0;
+        // Printing out result of function
+        System.out.println(isOdd.test(2));
+        // Saving function in variable, isOdd
+        Predicate isEven = n -> n % 2 == 0;
+        // Printing out result of function 
+        System.out.println(isEven.test(2));
+
     }
 
     /*
