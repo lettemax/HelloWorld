@@ -1,9 +1,6 @@
 import java.awt.*;
+import java.util.*;
 import java.lang.reflect.Array;
-import java.util.concurrent.Future;
-import java.util.Scanner;
-import java.util.Arrays;
-import java.util.Random;
 import java.lang.Math;
 
 
@@ -158,6 +155,7 @@ public class Main {
         d.roll();
         */
 
+        /*
         // Lambda function for Answerable interface
         // Saving function in variable, phone
         Answerable phone = () -> {return "Hello";};
@@ -171,8 +169,24 @@ public class Main {
         System.out.println(isOdd.test(2));
         // Saving function in variable, isOdd
         Predicate isEven = n -> n % 2 == 0;
-        // Printing out result of function 
+        // Printing out result of function
         System.out.println(isEven.test(2));
+        */
+
+        Map< String,Integer> hm =
+                new HashMap< String,Integer>();
+        hm.put("a", 100);
+        hm.put("b", 200);
+        hm.put("c", 300);
+        hm.put("d", 400);
+
+        // Returns Set view
+        Set< Map.Entry< String,Integer> > st = hm.entrySet();
+
+        //Elements can traverse in any order
+        for(Map.Entry m:hm.entrySet()){
+            System.out.println(m.getKey()+" "+m.getValue());
+        }
 
     }
 
